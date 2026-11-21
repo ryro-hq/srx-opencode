@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryro-hq/syrox-opencode.git"
+    "url": "https://github.com/ryro-hq/srx-opencode.git"
   },
   "scripts": {
     "check": "node --check index.ts && node --check client.mjs && node --check feedback.mjs && node --test *.test.mjs",

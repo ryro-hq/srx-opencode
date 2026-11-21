@@ -8,7 +8,7 @@ import plugin from './index.ts'
 import { changedFiles, diagnosticFeedback } from './feedback.mjs'
 import { SyroxLsp, inside, projectRoot } from './client.mjs'
 
-const binary = process.env.SRX_BIN ?? resolve('../syrox/target/release/srx')
+const binary = process.env.SRX_BIN ?? resolve('../srx/target/release/srx')
 if (process.env.SRX_BIN && !existsSync(binary)) {
   throw new Error(`SRX_BIN does not exist: ${binary}`)
 }

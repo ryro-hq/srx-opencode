@@ -1,18 +1,22 @@
-syrox-opencode
+srx-opencode
 
 OpenCode V2 plugin for Syrox (.srx), using the external `srx lsp` server.
-Source: https://github.com/ryro-hq/syrox-opencode
-Language server: https://github.com/ryro-hq/syrox
+Source: https://github.com/ryro-hq/srx-opencode
+Language server: https://github.com/ryro-hq/srx
 
 Install with OpenCode V2:
 
-  opencode plugin add github:ryro-hq/syrox-opencode
+  opencode plugin add github:ryro-hq/srx-opencode
 
-For development, clone this repository alongside Syrox and load it in the
-Syrox project's opencode.jsonc:
+For development, start in the directory containing the `srx` core checkout:
+
+  git clone https://github.com/ryro-hq/srx-opencode.git
+  cd srx
+
+Load the sibling checkout in the core checkout's root opencode.jsonc:
 
   { "$schema": "https://opencode.ai/config.json",
-    "plugins": ["../syrox-opencode"] }
+    "plugins": ["../srx-opencode"] }
 
 Build/install `srx` separately and put it on PATH, or set SYROX_LSP_BIN to
 its absolute executable path before starting OpenCode. When the active
